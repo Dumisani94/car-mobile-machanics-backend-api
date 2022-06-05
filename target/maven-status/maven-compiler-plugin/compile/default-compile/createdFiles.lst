@@ -1,10 +1,11 @@
 za/ac/tut/car/mobile/machanics/enities/Issue.class
-za/ac/tut/car/mobile/machanics/services/UserService.class
 za/ac/tut/car/mobile/machanics/controllers/UserController.class
-za/ac/tut/car/mobile/machanics/enities/User.class
 za/ac/tut/car/mobile/machanics/CarMobileMechanicsRunner.class
-za/ac/tut/car/mobile/machanics/enities/Role.class
 za/ac/tut/car/mobile/machanics/repositories/UserRepository.class
-za/ac/tut/car/mobile/machanics/ServletInitializer.class
 za/ac/tut/car/mobile/machanics/enities/Address.class
+za/ac/tut/car/mobile/machanics/services/UserService.class
+za/ac/tut/car/mobile/machanics/enities/User.class
+za/ac/tut/car/mobile/machanics/enities/Role.class
+za/ac/tut/car/mobile/machanics/ServletInitializer.class
 za/ac/tut/car/mobile/machanics/services/UserServiceImpl.class
+za/ac/tut/car/mobile/machanics/configs/SwaggerConfig.class
