@@ -31,18 +31,19 @@ public class UserController {
         return userService.retrieveAll();
     }
 
-    @PostMapping("/update")
+    @PostMapping("/save")
     public User registerUser(@RequestBody User user){
         return userService.registerUser(user);
     }
 
-    @PutMapping("/register")
+    @PutMapping("/update")
     public User modifyUser(@RequestBody User user){
         return userService.updateUser(user);
     }
 
     @GetMapping("/retrieve/id/{id}")
     public User retrieveUserUsingIdNumber(@PathVariable("id") String id){
+        log.info("Select user : " + id);
         return userService.findByUserId(Long.parseLong(id));
     }
 }

@@ -29,8 +29,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("RDP Housing Monitoring REST Services")
-                .description("This page lists all the rest apis for RDP housing monitoring system.")
+                .title("Car Mobile Mechanics REST APIs")
+                .description("This page lists all the rest apis for Car Mobile Mechanics system.")
                 .version("1.0-SNAPSHOT")
                 .build();
     }

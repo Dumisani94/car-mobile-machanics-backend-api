@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Data
 public class User implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
@@ -18,12 +18,17 @@ public class User implements Serializable {
     private String password;
     private String gender;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "role", referencedColumnName = "id")
     private Role role;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "address", referencedColumnName = "id")
     private Address address;
+
+    @OneToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "technician", referencedColumnName = "id")
+    private Technician technician;
+
 }
 

@@ -22,7 +22,16 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User registerUser(User user) {
+        User results = retrieveUserByEmail(user.getEmail());
+        if(results != null){
+            return null;
+        }
         return userRepository.save(user);
+    }
+
+    @Override
+    public User retrieveUserByEmail(String email) {
+        return userRepository.retrieveUserByEmail(email);
     }
 
     @Override

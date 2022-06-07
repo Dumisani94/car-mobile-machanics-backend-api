@@ -11,6 +11,8 @@ public interface UserService {
 
     User registerUser(User user);
 
+    User retrieveUserByEmail(String email);
+
     User updateUser(User user);
 
     User findByUserId(Long userId);
