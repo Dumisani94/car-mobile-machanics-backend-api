@@ -20,6 +20,7 @@ public class Incident implements Serializable {
     private String status;
     private String comments;
     private Boolean isAssigned;
+    private String cellnumber;
     private Long user;
     private String vehicleMake;
     private String transmission;

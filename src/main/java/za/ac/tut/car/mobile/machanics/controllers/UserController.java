@@ -33,7 +33,10 @@ public class UserController {
 
     @PostMapping("/save")
     public User registerUser(@RequestBody User user){
-        return userService.registerUser(user);
+        if(user != null){
+            return userService.registerUser(user);
+
+        }throw new RuntimeException("Unable to register user");
     }
 
     @PutMapping("/update")

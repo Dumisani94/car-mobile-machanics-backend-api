@@ -3,9 +3,11 @@ za/ac/tut/car/mobile/machanics/controllers/UserController.class
 za/ac/tut/car/mobile/machanics/controllers/TechnicianController.class
 za/ac/tut/car/mobile/machanics/enities/Technician.class
 za/ac/tut/car/mobile/machanics/CarMobileMechanicsRunner.class
+za/ac/tut/car/mobile/machanics/services/DashboardService.class
 za/ac/tut/car/mobile/machanics/repositories/IncidentRepository.class
 za/ac/tut/car/mobile/machanics/enities/Address.class
 za/ac/tut/car/mobile/machanics/enities/Vehicle.class
+za/ac/tut/car/mobile/machanics/controllers/DashboardController.class
 za/ac/tut/car/mobile/machanics/enities/User.class
 za/ac/tut/car/mobile/machanics/services/CardDetailsService.class
 za/ac/tut/car/mobile/machanics/enities/Role.class
@@ -23,6 +25,7 @@ za/ac/tut/car/mobile/machanics/repositories/UserRepository.class
 za/ac/tut/car/mobile/machanics/enities/TechnicianIncident.class
 za/ac/tut/car/mobile/machanics/services/NotificationServiceImpl.class
 za/ac/tut/car/mobile/machanics/services/UserService.class
+za/ac/tut/car/mobile/machanics/services/DashboardServiceImpl.class
 za/ac/tut/car/mobile/machanics/repositories/NotificationRepository.class
 za/ac/tut/car/mobile/machanics/services/IncidentService.class
 za/ac/tut/car/mobile/machanics/enities/Incident.class

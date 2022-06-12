@@ -31,4 +31,9 @@ public class IncidentController {
     public List<Incident>  retrieveUsingUserId(@PathVariable("user_id") String userId){
         return incidentService.retrieveByUserId(Long.parseLong(userId));
     }
+
+    @GetMapping("/fetch/technician/technician_id/{technician_id}")
+    public List<Incident> retrieveByTechnicianId(@PathVariable("technician_id") String technician_id){
+        return incidentService.findUserByTechnicianId(Long.parseLong(technician_id));
+    }
 }

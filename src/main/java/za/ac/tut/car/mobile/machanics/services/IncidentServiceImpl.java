@@ -29,4 +29,9 @@ public class IncidentServiceImpl implements IncidentService {
     public List<Incident> retrieveAll() {
         return incidentRepository.findAll();
     }
+
+    @Override
+    public List<Incident> findUserByTechnicianId(Long parseLong) {
+        return incidentRepository.findByTechnicianId(parseLong);
+    }
 }
