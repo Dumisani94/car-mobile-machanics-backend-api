@@ -3,6 +3,7 @@ package za.ac.tut.car.mobile.machanics.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+import za.ac.tut.car.mobile.machanics.enities.Technician;
 import za.ac.tut.car.mobile.machanics.enities.User;
 import za.ac.tut.car.mobile.machanics.services.UserService;
 
@@ -29,6 +30,16 @@ public class UserController {
     @GetMapping("/all")
     public List<User> findAll(){
         return userService.retrieveAll();
+    }
+
+    @GetMapping("/admin/unapproved")
+    public List<User> retrieveUnapprovedMechanics(){
+        return userService.retrieveUnapprovedMechanics();
+    }
+
+    @GetMapping("/delete/id/{id}")
+    public User deleteUser(@PathVariable("id") String id){
+        return userService.deleteUser(userService.findByUserId(Long.parseLong(id)));
     }
 
     @PostMapping("/save")

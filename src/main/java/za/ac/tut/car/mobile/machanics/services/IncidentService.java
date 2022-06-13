@@ -11,6 +11,8 @@ public interface IncidentService {
 
     List<Incident>  retrieveByUserId(Long userId);
 
+    List<Incident>  retrieveByStatus(String status);
+
     List<Incident>  retrieveAll();
 
     List<Incident> findUserByTechnicianId(Long parseLong);

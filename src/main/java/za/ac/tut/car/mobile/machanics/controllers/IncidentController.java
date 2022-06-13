@@ -32,6 +32,11 @@ public class IncidentController {
         return incidentService.retrieveByUserId(Long.parseLong(userId));
     }
 
+    @GetMapping("/admin/fetch/status/{status}")
+    public List<Incident>  retrieveByStatus(@PathVariable("status") String status){
+        return incidentService.retrieveByStatus(status);
+    }
+
     @GetMapping("/fetch/technician/technician_id/{technician_id}")
     public List<Incident> retrieveByTechnicianId(@PathVariable("technician_id") String technician_id){
         return incidentService.findUserByTechnicianId(Long.parseLong(technician_id));

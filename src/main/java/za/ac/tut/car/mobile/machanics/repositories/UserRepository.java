@@ -4,7 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import za.ac.tut.car.mobile.machanics.enities.Technician;
 import za.ac.tut.car.mobile.machanics.enities.User;
+
+import java.util.List;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
@@ -16,5 +19,8 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     @Query(value = "SELECT * FROM User WHERE email =?1",nativeQuery = true)
     User retrieveUserByEmail(@Param("email") String email);
+
+    @Query(value = "SELECT * FROM User WHERE is_approved = null or is_approved = false",nativeQuery = true)
+    List<User> findUnapprovedMechanics();
 
 }

@@ -23,5 +23,6 @@ public class Technician implements Serializable {
     private Integer ratings;
     private Boolean isAvailable;
     private Long userId;
+    private Boolean isApproved;
 
 }

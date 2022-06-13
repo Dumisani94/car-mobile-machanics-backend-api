@@ -1,6 +1,7 @@
 package za.ac.tut.car.mobile.machanics.services;
 
 import org.springframework.stereotype.Service;
+import za.ac.tut.car.mobile.machanics.enities.Technician;
 import za.ac.tut.car.mobile.machanics.enities.User;
 
 import java.util.List;
@@ -18,4 +19,8 @@ public interface UserService {
     User findByUserId(Long userId);
 
     List<User> retrieveAll();
+
+    List<User> retrieveUnapprovedMechanics();
+
+    User deleteUser(User id);
 }

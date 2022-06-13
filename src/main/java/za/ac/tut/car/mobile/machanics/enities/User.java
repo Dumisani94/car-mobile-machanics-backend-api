@@ -17,6 +17,8 @@ public class User implements Serializable {
     private String cellNumber;
     private String password;
     private String gender;
+    private Boolean isApproved;
+    private String status;
 
     @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "role", referencedColumnName = "id")

@@ -13,4 +13,7 @@ public interface TechnicianRepository extends JpaRepository<Technician, Integer>
 
     @Query(value = "SELECT * FROM Technician WHERE address =?1",nativeQuery = true)
     List<Technician> retrieveUserByAddress(@Param("address") String address);
+
+    @Query(value = "SELECT * FROM Technician WHERE is_approved = false",nativeQuery = true)
+    List<Technician> findUnapprovedMechanics();
 }

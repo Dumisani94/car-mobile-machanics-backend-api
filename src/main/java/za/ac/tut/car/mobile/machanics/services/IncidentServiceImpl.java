@@ -26,6 +26,11 @@ public class IncidentServiceImpl implements IncidentService {
     }
 
     @Override
+    public List<Incident> retrieveByStatus(String status) {
+        return incidentRepository.retrieveUserByStatus(status);
+    }
+
+    @Override
     public List<Incident> retrieveAll() {
         return incidentRepository.findAll();
     }
