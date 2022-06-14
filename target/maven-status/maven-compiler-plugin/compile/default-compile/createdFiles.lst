@@ -4,6 +4,7 @@ za/ac/tut/car/mobile/machanics/controllers/TechnicianController.class
 za/ac/tut/car/mobile/machanics/enities/Technician.class
 za/ac/tut/car/mobile/machanics/CarMobileMechanicsRunner.class
 za/ac/tut/car/mobile/machanics/services/DashboardService.class
+za/ac/tut/car/mobile/machanics/enities/Invoice.class
 za/ac/tut/car/mobile/machanics/repositories/IncidentRepository.class
 za/ac/tut/car/mobile/machanics/enities/Address.class
 za/ac/tut/car/mobile/machanics/enities/Vehicle.class

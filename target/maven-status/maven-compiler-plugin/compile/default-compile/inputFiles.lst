@@ -28,6 +28,7 @@
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/services/CardDetailsServiceImpl.java
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/enities/Notification.java
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/services/IncidentServiceImpl.java
+/home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/enities/Invoice.java
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/repositories/IncidentRepository.java
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/CarMobileMechanicsRunner.java
 /home/dumisani/Documents/Eagle Technologies (PTY) LTD/dev/github/car-mobile-machanics-backend-api/src/main/java/za/ac/tut/car/mobile/machanics/controllers/CardDetailsController.java

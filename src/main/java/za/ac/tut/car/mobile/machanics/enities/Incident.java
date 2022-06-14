@@ -2,10 +2,7 @@ package za.ac.tut.car.mobile.machanics.enities;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -31,4 +28,8 @@ public class Incident implements Serializable {
     private String loggedBy;
     private String technicianName;
     private Long technicianId;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "invoice", referencedColumnName = "id")
+    private Invoice invoice;
 }
